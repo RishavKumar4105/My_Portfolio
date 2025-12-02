@@ -2119,7 +2119,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-
 /* whatsapp button */
 
 .floating-button {
@@ -2157,5 +2156,59 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-weight: 500;
 }
 
+/* RESPONSIVE */
 
-/* endwhatsapp button */
+/* Tablets */
+@media (max-width: 768px) {
+  .floating-button {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .whatsapp-button {
+    padding: 10px 16px;
+    gap: 8px;
+  }
+
+  .whatsapp-button img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .whatsapp-button-text {
+    font-size: 14px;
+  }
+}
+
+/* Mobile - ONLY ICON */
+@media (max-width: 480px) {
+  .floating-button {
+    bottom: 12px;
+    right: 12px;
+  }
+
+  .whatsapp-button {
+    padding: 10px;
+    gap: 0;
+    border-radius: 50%;
+  }
+
+  .whatsapp-button-text {
+    display: none; /* 👈 mobile par text hide */
+  }
+
+  .whatsapp-button img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 360px) {
+  .whatsapp-button img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* end whatsapp button */
